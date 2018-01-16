@@ -1,15 +1,18 @@
 ## Part 1: Debugging
 
 my.num <- 6
-initials <- "?. ?."
+initials <- "D. K."
 
 my.vector <- c(my.num, initials)
 
 # run ?sum to get more info
 vector.sum <- sum(my.vector)
 
+
 # Describe why this doesn't work: 
-# 
+# This does not work because the sum() function does not take in
+# any character type. Because my.vector contains a character 
+# (initals), it fails to sum and throws an error.
 
 install.packages("stringr")
 
